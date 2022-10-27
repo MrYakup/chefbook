@@ -127,7 +127,7 @@ export default function ProfileModal({
             />
           )}
         </DialogTitle>
-        <DialogContent className="w-96">
+        <DialogContent >
           {!chat.isGroupChat && (
             <DialogContentText>
               {getSenderFull(user, chat.users).name}
