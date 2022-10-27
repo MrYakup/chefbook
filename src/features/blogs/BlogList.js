@@ -36,13 +36,17 @@ const BlogList = () => {
 
     content = (
       <div className="h-screen">
+        <div className="flex flex-col items-center py-4 gap-2">
+          <p className="text-4xl font-semibold">Blog & Article</p>
+          <p className="px-8 break-all text-center text-gray-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
+        </div>
         <div className="">
           <SearchBar/>
         </div>
         <div className="mx-2">
           <div className="flex flex-col gap-4">{tableContent}</div>
         </div>
-        <div className=""></div>
+        
       </div>
     );
   }

@@ -3,7 +3,7 @@ import { useFormik } from "formik";
 import FormSchema from './Validations'
 
 export default function Form() {
-  const {handleSubmit,handleChange, handleBlur,values,errors,touched} = useFormik({
+  const { handleSubmit, handleChange, handleBlur ,errors, touched } = useFormik({
     initialValues: {
       name: "",
       email: "",
@@ -20,11 +20,11 @@ export default function Form() {
 
   return (
         <div className="w-full px-4 sm:grid sm:items-center md:grid-cols-2 lg:grid-cols-3 lg:gap-6">
-          <div className="hidden rounded-2xl lg:block lg:h-full">
+          {/* <div className="hidden rounded-2xl lg:block lg:h-full">
             <img className="w-full h-full rounded-2xl object-cover object-center " src="/photos/contactimg.svg" alt="" />
-          </div>
+          </div> */}
           <div className="md:col-span-2 xl:pr-2 ">
-            <form onSubmit={handleSubmit} action="#" method="POST" >
+            <form onSubmit={handleSubmit} >
               <div className="shadow-md overflow-hidden sm:rounded-md ">
                 <div className="py-5 px-2 bg-white sm:p-6">
                   <div className="grid grid-cols-6 gap-6">

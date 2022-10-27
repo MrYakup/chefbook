@@ -4,7 +4,7 @@ import axios from "axios";
 
 import { IconButton } from "@mui/material";
 import { Stack } from "@mui/system";
-import ForumRoundedIcon from '@mui/icons-material/ForumRounded';
+import { AiFillWechat } from "react-icons/ai";
 
 import { getSender, getSenderFull } from "../config/ChatLogics";
 import GroupChatModal from "./GroupChatModal";
@@ -48,7 +48,7 @@ function MyChats({
     <div  className={`${selectedChat ? "hidden" : ""} h-screen overflow-y-scroll bg-[#E8E8E8]`}>
       <div className="flex justify-between p-2 py-2 bg-[#16997d]">
         <div className="flex gap-1 items-center">
-          <ForumRoundedIcon className="text-white" />
+          <AiFillWechat className="text-white text-3xl" />
           <p className="text-white font-bold text-lg">Chats</p>
         </div>
         <GroupChatModal user={user} chats={chats} setChats={setChats} />
